@@ -173,22 +173,46 @@ img {
   border-bottom: 2px dashed lightgray;
   display: flex;
 }
+@media (max-width: 500px) {
+  .upper-content {
+    flex-direction: column;
+  }
+}
 .upper-content .fun-bus {
   padding-left: 0;
   margin-right: 36%;
   margin-left: 0;
   padding: 20px 0;
 }
+@media (max-width: 500px) {
+  .upper-content .fun-bus {
+    margin: 0 auto;
+    padding: 20px 0 0;
+  }
+}
 .upper-content .navigation {
   display: flex;
   justify-content: flex-end;
   padding: 30px 0 15px;
+}
+@media (max-width: 500px) {
+  .upper-content .navigation {
+    margin: 0 auto;
+    padding: 10px 0 0;
+  }
 }
 .upper-content .navigation a {
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .upper-content .navigation a {
+    font-size: 2rem;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+  }
 }
 .footer {
   width: 100%;
@@ -205,12 +229,28 @@ img {
   margin-bottom: 15px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .header .fun-bus-img {
+    width: 100%;
+    padding: 0 4%;
+  }
+}
 .header .header-content h2 {
   padding-top: 10px;
   font-size: 2.6rem;
 }
+@media (max-width: 500px) {
+  .header .header-content h2 {
+    padding: 4%;
+  }
+}
 .header .header-content p {
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .header .header-content p {
+    padding: 0 4%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -218,13 +258,32 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    align-items: center;
+    padding-left: 4%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    justify-content: space-between;
+    padding: 4%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
