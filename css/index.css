@@ -169,15 +169,22 @@ img {
   margin: 0 auto;
 }
 .upper-content {
+  width: 100%;
   border-bottom: 2px dashed lightgray;
   display: flex;
+}
+.upper-content .fun-bus {
+  padding-left: 0;
+  margin-right: 36%;
+  margin-left: 0;
   padding: 20px 0;
 }
-.navigation {
+.upper-content .navigation {
   display: flex;
-  margin-left: 364px;
+  justify-content: flex-end;
+  padding: 30px 0 15px;
 }
-.navigation a {
+.upper-content .navigation a {
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
@@ -194,9 +201,16 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.header .fun-bus {
+.header .fun-bus-img {
   margin-bottom: 15px;
   width: 100%;
+}
+.header .header-content h2 {
+  padding-top: 10px;
+  font-size: 2.6rem;
+}
+.header .header-content p {
+  padding-top: 10px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -243,4 +257,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  background-color: teal;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 11px;
+  width: 80%;
+  padding: 10px 15px;
 }
