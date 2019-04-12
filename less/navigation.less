@@ -1,1 +1,49 @@
 // Navigation Styles here
+.upper-content {
+    width: 100%;
+    border-bottom: 2px dashed lightgray;
+    display:flex;
+
+    @media @phone {
+        // display: flex;
+        // justify-content: center;
+        flex-direction: column;
+
+    }
+    .fun-bus {
+        padding-left: 0;
+        margin-right:36%;
+        margin-left: 0;
+        padding: 20px 0;
+
+        @media @phone {
+            margin: 0 auto;
+            padding: 20px 0 0;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        padding:30px 0 15px;
+
+        @media @phone {
+            margin:0 auto;
+            padding: 10px 0 0;
+            
+
+        }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 15px;
+
+        @media @phone {
+            font-size: 2.0rem;
+            justify-content: space-evenly;
+            padding: 15px 20px;
+        }
+        }
+    }
+}
